@@ -18,7 +18,7 @@ Components are organized in layers from device to service:
 
 All components can be used independently — each CuOS component works standalone (you don’t need to run the others to use a single component).
 
-# Need help or want to collaborate?
+## Need help or want to collaborate?
 
 * Open an issue in the relevant repo.
 * Contact us directly (contact AT simonwalz.de or via [LinkedIn](https://www.linkedin.com/in/simon-walz/))
