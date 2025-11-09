@@ -1,7 +1,5 @@
 # cuos.dev
 
-What is CuOS?
-
 🚀 CuOS components help you keep systems and services secure, up-to-date, and easy to manage — from a single device to a small fleet. They let you define, update, and control infrastructure via container images, Git workflows, or declarative configs, bringing practical DevOps to embedded, edge, server, and cloud environments.
 
 The CuOS operating system is also a solid base for IoT, edge, and VM-based products.
