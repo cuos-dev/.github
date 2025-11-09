@@ -6,7 +6,7 @@ What is CuOS?
 
 The CuOS operating system is also a solid base for IoT, edge, and VM-based products.
 
-## Framework overview:
+## Framework overview
 
 Components are organized in layers from device to service:
 
