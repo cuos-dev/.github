@@ -4,6 +4,10 @@
 
 The CuOS operating system is also a solid base for IoT, edge, and VM-based products.
 
+## Start here
+
+**To build a bootable system**, start at [cuos-release](https://github.com/cuos-dev/cuos-release#readme): describe the system you want in a `system.json` and run `./tool.sh image`. It produces a disk image, an ISO installer or an LXC container.
+
 ## Framework overview
 
 Components are organized in layers from device to service:
@@ -12,7 +16,8 @@ Components are organized in layers from device to service:
 | --- | --- | --- |
 | Device management | CuOS Fleet Management — agent + server for device enrollment, health telemetry, remote commands, and rollout orchestration. | [cuos-iac](https://github.com/cuos-dev/cuos-iac#readme) |
 | Service management | CuOS IaC — Infrastructure-as-Code manager and Web UI for defining services, builds, deployments, and release channels. | [cuos-iac](https://github.com/cuos-dev/cuos-iac#readme) |
-| Operating system | CuOS (OS) — minimal OS image with updater, image and installer factories, OTA tooling and reproducible builds. | [cuos](https://github.com/cuos-dev/cuos#readme) |
+| Operating system | CuOS (OS) — minimal OS image with updater, OTA tooling and reproducible builds. | [cuos](https://github.com/cuos-dev/cuos#readme) |
+| Build & release | CuOS Release Tooling — `tool.sh`, the image and installer factories, pinned image versions, configuration merging, signing and encryption. | [cuos-release](https://github.com/cuos-dev/cuos-release#readme) |
 
 All components can be used independently — each CuOS component works standalone (you don’t need to run the others to use a single component).
 
