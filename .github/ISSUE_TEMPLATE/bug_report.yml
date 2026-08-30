@@ -1,0 +1,70 @@
+# SPDX-License-Identifier: Apache-2.0
+name: Bug report
+description: Something does not work as documented
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. If it is a **security**
+        issue, please do not file it here — see the security policy instead.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which part of CuOS?
+      options:
+        - cuos — the operating system, updater, factories
+        - cuos-release — tool.sh, building images and installers
+        - cuos-iac — IaC manager, WebUI, fleet
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - x86_64
+        - rpi-arm64 (64-bit Raspberry Pi)
+        - rpi-arm32 (32-bit Raspberry Pi)
+        - orangepi-zero3
+        - LXC container
+        - Other / not applicable
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened, and what did you expect instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: The commands you ran, and the relevant part of your `system.json` — **with passwords and registry credentials removed**.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: version
+    attributes:
+      label: Version
+      description: |
+        On a running system: `cuos version`.
+        When building: the tag or commit of the repository, and `./tool.sh name your-system.json`.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: "`cuos log`, or `journalctl -u cuos-*` — again with any secrets removed."
+      render: shell
