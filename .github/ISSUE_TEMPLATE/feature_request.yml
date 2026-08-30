@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: Apache-2.0
+name: Feature request
+description: Suggest something CuOS should be able to do
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which part of CuOS?
+      options:
+        - cuos — the operating system, updater, factories
+        - cuos-release — tool.sh, building images and installers
+        - cuos-iac — IaC manager, WebUI, fleet
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The situation you are in, rather than the solution you have in mind — it often turns out there is a shorter way.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like CuOS to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What are you doing instead today?
+      description: A workaround, another tool, or nothing at all — all three are useful to know.
