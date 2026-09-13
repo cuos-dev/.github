@@ -21,6 +21,16 @@ Components are organized in layers from device to service:
 
 All components can be used independently — each CuOS component works standalone (you don’t need to run the others to use a single component).
 
+## Boiler plates and examples
+
+CuOS can be taken up at four levels, from running services on a ready-made system to building an OS from scratch. The [Development Guide](https://github.com/cuos-dev/cuos/blob/main/docs/development-guide.md) explains which one is yours; these repositories are the starting points.
+
+| Level | Repository |
+| --- | --- |
+| Container Service — run services, build nothing | [iac-hello-world-system](https://github.com/cuos-dev/iac-hello-world-system#readme) |
+| Own CuOS Init App — your own update or deployment mechanism | [boilerplate-own-cuos-init-app](https://github.com/cuos-dev/boilerplate-own-cuos-init-app#readme) |
+| Own OS based on the CuOS system — another board, or your own kernel drivers | [boilerplate-own-os-based-on-cuos](https://github.com/cuos-dev/boilerplate-own-os-based-on-cuos#readme) |
+
 ## Need help or want to collaborate?
 
 * Open an issue in the relevant repo.
