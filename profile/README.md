@@ -6,7 +6,7 @@ The CuOS operating system is also a solid base for IoT, edge, and VM-based produ
 
 ## Start here
 
-**To build a bootable system**, start at [cuos-release](https://github.com/cuos-dev/cuos-release#readme): describe the system you want in a `system.json` and run `./tool.sh image`. It produces a disk image, an ISO installer or an LXC container.
+**To build a bootable system**, start at [cuos-release](https://github.com/cuos-dev/cuos-release#readme): describe the system you want in a `system.json` and run `./cuos-release/tool.sh image`. It produces a disk image, an ISO installer or an LXC container.
 
 ## Framework overview
 
