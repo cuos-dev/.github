@@ -23,7 +23,7 @@ All components can be used independently — each CuOS component works standalon
 
 ## Boiler plates and examples
 
-CuOS can be taken up at four levels, from running services on a ready-made system to building an OS from scratch. The [Development Guide](https://github.com/cuos-dev/cuos/blob/main/docs/development-guide.md) explains which one is yours; these repositories are the starting points.
+CuOS can be taken up at four levels, from running services on a ready-made system to building an OS from scratch. The [Development Guide](https://github.com/cuos-dev/cuos/blob/HEAD/docs/development-guide.md) explains which one is yours; these repositories are the starting points.
 
 | Level | Repository |
 | --- | --- |
