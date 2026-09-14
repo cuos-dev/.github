@@ -20,7 +20,8 @@ a checkbox that means neither is not.
       that this renames or removes.
 
 <!--
-Branch flow: pull requests go to `development`, not to `main`.
+Branch flow: where a repository has a `development` branch, pull requests go
+there and not to `main`.
 History is kept as it was made: no squashing, and no rebasing of a branch that
 has already been pushed. Bring a branch up to date by merging `development`
 into it.
